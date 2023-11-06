@@ -1,4 +1,4 @@
-1.      Create AWS Instance and connect it to putty 
+1.    Create AWS Instance and connect it to putty 
 
 Login AWS account -> search ec2 -> launch instance -> give name and create key pair -> and launch it -> select the instance created -> and copy the public Ip address
 
