@@ -288,20 +288,87 @@ value={formData.email} onChange={handleInputChange}
 export default FormHandling;
 
 Q11. Write a program to display fibonacii series in REPL 1 1 2 3 5 8 13… Code:
- 
- 
-Q12. REPL Environment demonstrate variables and multiline expression. Code:
- 
 
+> .editor
+// Entering editor mode (Ctrl+D to finish, Ctrl+C to cancel) function fib(n) {
+if (n <= 1){
+return n;
+} else {
+return fib(n-1) + fib(n-2);
+}
+}
+console.log('Fibonacci Series: \n');
+for(var i=0; i<12; i++){ console.log(fib(i));
+}
+Fibonacci Series:
+00 c WNHHO
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+undefined 
+Q12. REPL Environment demonstrate variables and multiline expression. Code:
+
+// Declare and initialize a variable const x = 10;
+// Display the value of the variable
+X
+// Perform calculations and display the results
+const y = x * 2;
+y
+// Define a multiline expression
+const multiLineExpression =
+This is a multiline expression.
+You can use multiple lines to write code and explanations.
+// Display the multiline expression
+multiLineExpression
 Q13. Demonstrate Nodejs Read Stream &Write Stream. Code:
- 
- 
+
+const fs = require('fs');
+// Create a Read Stream for an input file
+const readStream = fs.createReadStream('input.txt', 'utf8');
+// Create a Write Stream for an output file
+const writeStream = fs.createWriteStream ('output.txt');
+// Pipe the Read Stream to the Write Stream to copy the data readStream.pipe (writeStream);
+// Display a message when the process is completed writeStream.on('finish', () => {
+console.log('Data has been copied to output.txt');
+}); 
 Q14. Demonstrate Nodejs Web Module. Code:
- 
+const http
+});
+=
+// Create an HTTP server
+const server
+http.createServer ((req, res) => {
+res.writeHead (200, { 'Content-Type': 'text/plain' }); res.end('Hello, Node.js Web Server!\n');
+});
+require('http');
+// Listen on port 3000
+const port
+3000;
+server.listen (port, () => {
+console.log('Server is running at http://localhost:${port}/`);
+});
 
 Q15. Demonstrate Express Router. Code:
- 
- 
+
+const express = require('express'); const app = express();
+const port = 3000;
+// Create an instance of the Express Router const router = express. Router();
+// Define a route on the router router.get('/', (req, res) => {
+res.send('Hello from the router!');
+});
+// Mount the router at a specific path app.use( '/myrouter', router);
+// Start the Express server app.listen(port, () => {
+console.log('Server
+});
+is running on http://localhost:${port}`); 
 Q16. Write a program to display class timetable and apply styles on it. Write a program to display even or odd number.
 Code:
 <!DOCTYPE html>
